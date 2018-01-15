@@ -438,12 +438,13 @@
 }
 
 .brand .n-logo {
-    max-width: 100px;
+    //*margin-top: 200px;*/
+    max-width: 500px;
     margin-bottom: 40px;
 }
 
 .invision-logo {
-    max-width: 70px;
+    max-width: 120px;
     top: -2px;
     position: relative;
 }
