@@ -31,7 +31,7 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-header">Menú</a>
-                    <a class="dropdown-item" href="#">Servicio al Cliente</a>
+                    <a class="dropdown-item" href="javascript:void(0)" onclick="scrollToCliente()">Servicio al Cliente</a>
                     <a class="dropdown-item" href="./servicios.html">Tarifas y Servicios</a>
                     <a class="dropdown-item" href="#">Manual de Calidad</a>
                     <a class="dropdown-item" href="#">Matriz Doc.Externos</a>
@@ -109,14 +109,12 @@
     </nav>
     <!-- End Navbar -->
     <div class="wrapper">
-        <div class="page-header clear-filter" filter-color="orange">
-            <div class="page-header-image" data-parallax="true" style="background-image: url('./assets/img/back2.jpg');">
+        <div class="page-header clear-filter" filter-color="orange1">
+            <div class="page-header-image" data-parallax="true" style="background-image: url('./assets/img/back2_copia.jpg');">
             </div>
             <div class="container">
                 <div class="content-center brand">
-                    <img class="n-logo" src="./assets/img/logoAlbo.png" alt="">
-                    <h1 class="h1-seo">ALBO S.A.</h1>
-                    <h3>Almacenera Boliviana S.A.</h3>
+                    <img class="n-logo" src="./assets/img/logoAlboT.png" alt="">
                 </div>
                 <h6 class="category category-absolute">Miembro de 
                     <a href="http://sumagroup.com/" target="_blank">
@@ -298,6 +296,55 @@
                             </div>
                         </div>
 
+                        <div class="section section-cliente text-center" id="cliente">
+                            <h2>Servicio al Cliente</h2>
+                            <div class="container">
+                                <div class="row">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <p>Es el proceso de mayor importancia para la organización y el principal instrumento para poder satisfacer a los clientes dentro del marco legal que rige para la concesión de depósitos de Aduana.
+                                                Parte de la estructura convencional de la cadena de suministro enfocada a la calidad del servicio, se origina con el proceso:</p>
+                                                <h6>PROVEEDOR > ORGANIZACIÓN > CLIENTE</h6>
+                                                <p>En ALBO S.A. la importancia del proveedor es relativa para la prestación del servicio, lo cual dio origen a sustituir este concepto de entrada al Sistema de Gestión de Calidad a través del requisito de los clientes en sustitución de los proveedores, para posteriormente ingresar a la organización, que diseña un mapa de procesos cuyo fin persigue cumplir el contrato de concesión, los requisitos del cliente y los requisitos de la norma NB ISO 9001:2000 logrando ineludiblemente la satisfacción del cliente y la gestión de calidad.
+                                                ALBO S.A. ha identificado para el funcionamiento de su Sistema de Gestión de Calidad, tres tipos de clientes cuyos requisitos son diferentes uno de otro, pero no excluyentes en determinados procesos de la realización del servicio:</p>
+
+                                                <ul class="nav nav-tabs justify-content-center" role="tablist">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active" data-toggle="tab" href="#transportista" role="tab">
+                                                            <i class="now-ui-icons objects_umbrella-13"></i> Transportista
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" data-toggle="tab" href="#agente" role="tab">
+                                                            <i class="now-ui-icons shopping_cart-simple"></i> Agente Despachante
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" data-toggle="tab" href="#consignatario" role="tab">
+                                                            <i class="now-ui-icons shopping_shop"></i> Consignatario Mercadería
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <div class="card-body">
+                                                    <!-- Tab panes -->
+                                                    <div class="tab-content text-center">
+                                                        <div class="tab-pane active" id="transportista" role="tabpanel">
+                                                            <p>Interviene directamente en el primer, segundo y tercer proceso de la realización del servicio (asistencia al control de tránsitos y recepción de mercaderías respectivamente), buscando un servicio rápido entre el ingreso de su medio de transporte con mercaderías al recinto, hasta su liberación después de la descarga y la emisión del parte de recepción.</p>
+                                                        </div>
+                                                        <div class="tab-pane" id="agente" role="tabpanel">
+                                                            <p>Cliente que se origina en el proceso de despacho, desde la emisión del parte de recepción, hasta la conclusión del trámite de despacho, donde requiere agilidad en los trámites y fundamentalmente conformidad (seguridad) en la entrega de los bienes propiedad del cliente.</p>
+                                                        </div>
+                                                        <div class="tab-pane" id="consignatario" role="tabpanel">
+                                                            <p>O Propietario de los Bienes, es un cliente que aunque no se involucre cara a cara con la realización del servicio, es propietario de las mercaderías, y por lo tanto quien en definitiva paga por el servicio. Este cliente es parte interesada en todos los procesos de la organización.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="section section-recintos" id="carousel">
                             <div class="container text-center">
                                 <div class="row justify-content-md-center">
@@ -431,7 +478,7 @@
                                 <h2 class="title">Nuestros Certificadores</h2>
                                 <div class="team" style="margin-top: 80px">
                                     <div class="row">
-                                        <div class="col-md-4">
+                                        <div class="col-md-3">
                                             <div class="team-player">
                                                 <a target="_blank" href="https://www.iram.org.ar" >
                                                     <img src="./assets/img/logo_afaq.png" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
@@ -440,7 +487,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col-md-4">
+                                        <div class="col-md-3">
                                             <div class="team-player">
                                                 <a target="_blank" href="https://www.aduana.gob.bo" >
                                                     <img src="./assets/img/logo_aduana.png" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
@@ -449,12 +496,21 @@
 
                                             </div>
                                         </div>
-                                        <div class="col-md-4">
+                                        <div class="col-md-3">
                                             <div class="team-player">
                                                 <a target="_blank" href="https://www.ibnorca.org" >
                                                     <img src="./assets/img/logo_ibnorca.png" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
                                                 </a>
                                                 <h4 class="title">IBNORCA</h4>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="team-player">
+                                                <a target="_blank" href="https://www.iqnet-certification.com" >
+                                                    <img src="./assets/img/logo_iqnet.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
+                                                </a>
+                                                <h4 class="title">IQNET</h4>
 
                                             </div>
                                         </div>
@@ -504,7 +560,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="http://blog.albo.com.bo">
+                                        <a href="http://almacenera.blogspot.com/" target="_blank">
                                             Blog
                                         </a>
                                     </li>
@@ -544,6 +600,14 @@
                     if ($('.section-about-us').length != 0) {
                         $("html, body").animate({
                             scrollTop: $('.section-about-us').offset().top
+                        }, 1000);
+                    }
+                }
+                function scrollToCliente() {
+
+                    if ($('.section-cliente').length != 0) {
+                        $("html, body").animate({
+                            scrollTop: $('.section-cliente').offset().top
                         }, 1000);
                     }
                 }
