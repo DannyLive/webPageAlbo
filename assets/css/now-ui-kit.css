@@ -7432,8 +7432,8 @@ Created using IcoMoon - icomoon.io
         position: relative;
         right: 0;
     }
-    .nav-tabs {
-        display: inline-block;
+    .nav-nav-tabs {
+        /*display: inline-block;*/
         width: 100%;
         padding-left: 100px;
         padding-right: 100px;
