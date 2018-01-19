@@ -479,3 +479,33 @@
     display: block;
     position: relative;
 }
+
+.footer.footer-big .gallery-feed img {
+    width: 20%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    float: left;
+}
+
+.gallery {
+    margin-top: 45px;
+    padding-bottom: 50px;
+}
+
+.nav-pills:not(.nav-pills-icons):not(.nav-pills-just-icons) .nav-item .nav-link {
+    border-radius: 30px;
+}
+
+.nav-pills.nav-pills-just-icons .nav-item .nav-link {
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    padding: 0;
+    max-width: 80px;
+    min-width: auto;
+}
+
+.nav-pills.nav-pills-just-icons .nav-item .nav-link i.now-ui-icons {
+    line-height: 80px;
+    font-size: 24px;
+}

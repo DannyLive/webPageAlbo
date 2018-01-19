@@ -366,9 +366,10 @@ nowuiKit = {
 
     initContactUsMap: function() {
         var myLatlng = new google.maps.LatLng(-16.510218, -68.188338);
+        var centerLatLng = new google.maps.LatLng(-16.510218, -68.188338 - 0.050);
         var mapOptions = {
             zoom: 13,
-            center: myLatlng,
+            center: centerLatLng,
             scrollwheel: false, //we disable de scroll over the map, it is a really annoing when you scroll through page
             styles: [{
                 "featureType": "water",
@@ -492,7 +493,7 @@ nowuiKit = {
 
         var marker = new google.maps.Marker({
             position: myLatlng,
-            title: "Hello World!"
+            title: "Aeropuerto Internacional El Alto"
         });
 
         // To add the marker to the map, call setMap();
