@@ -365,11 +365,39 @@ nowuiKit = {
     }, 6),
 
     initContactUsMap: function() {
-        var myLatlng = new google.maps.LatLng(-16.510218, -68.188338);
-        var centerLatLng = new google.maps.LatLng(-16.510218, -68.188338 - 0.050);
+        /***coordenadas***/
+        //el alto
+        var elAlto = new google.maps.LatLng(-16.507821, -68.178230);
+        //cochabamba
+        var cocha = new google.maps.LatLng(-17.396650, -66.225200);
+        //viruViru
+        var viruViru = new google.maps.LatLng(-17.653202, -63.135696);
+        //santa1
+        var santa1 = new google.maps.LatLng(-17.775759, -63.130721);
+        //santa2
+        var santa2 = new google.maps.LatLng(-17.786555, -63.150792);
+        //sucre
+        var sucre = new google.maps.LatLng(-19.017373, -65.250975);
+        //campoPajoso
+        var campoPajoso = new google.maps.LatLng(-21.904651, -63.634153);
+        //bermejo
+        var bermejo = new google.maps.LatLng(-22.732680, -64.336410);
+        //villazon
+        var villazon = new google.maps.LatLng(-22.075465, -65.596036);
+        //avaroa
+        var avaroa = new google.maps.LatLng(-21.205084, -68.214839);
+        //pisiga
+        var pisiga = new google.maps.LatLng(-19.271446, -68.615681);
+        //tambo
+        var tambo = new google.maps.LatLng(-18.279464, -69.005361);
+
+
+
+        //var myLatlng = new google.maps.LatLng(-16.510218, -68.188338);
+        //var centerLatLng = new google.maps.LatLng(-16.510218, -68.188338 - 0.050);
         var mapOptions = {
             zoom: 13,
-            center: centerLatLng,
+            center: new google.maps.LatLng(-16.507821, -68.178230 - 0.050),
             scrollwheel: false, //we disable de scroll over the map, it is a really annoing when you scroll through page
             styles: [{
                 "featureType": "water",
@@ -489,15 +517,35 @@ nowuiKit = {
             }]
         };
 
-        var map = new google.maps.Map(document.getElementById("contactUsMap"), mapOptions);
+        map = new google.maps.Map(document.getElementById("contactUsMap"), mapOptions);
 
-        var marker = new google.maps.Marker({
-            position: myLatlng,
-            title: "Aeropuerto Internacional El Alto"
-        });
+        //var marker = new google.maps.Marker({position: myLatlng, title: "Aeropuerto Internacional El Alto"});
+        var markerElAlto = new google.maps.Marker({position: elAlto, title: "Aeropuerto Internacional El Alto"});
+        var markercocha = new google.maps.Marker({position: cocha, title: "Cochabamba"});
+        var markerviruViru = new google.maps.Marker({position: viruViru, title: "Aeropuerto Internacional Viru Viru"});
+        var markersanta1 = new google.maps.Marker({position: santa1, title: "Santa Cruz 1"});
+        var markersanta2 = new google.maps.Marker({position: santa2, title: "Santa Cruz 2"});
+        var markersucre = new google.maps.Marker({position: sucre, title: "Sucre"});
+        var markercampoPajoso = new google.maps.Marker({position: campoPajoso, title: "Tarija - Campo Pajoso"});
+        var markerbermejo = new google.maps.Marker({position: bermejo, title: "Tarija - Bermejo"});
+        var markervillazon = new google.maps.Marker({position: villazon, title: "Potosí - Villazón"});
+        var markeravaroa = new google.maps.Marker({position: avaroa, title: "Potosí - Avaroa"});
+        var markerpisiga = new google.maps.Marker({position: pisiga, title: "Oruro - Pisiga"});
+        var markertambo = new google.maps.Marker({position: tambo, title: "Oruro - Tambo Quemado"});
 
         // To add the marker to the map, call setMap();
-        marker.setMap(map);
+        markerElAlto.setMap(map);
+        markercocha.setMap(map);
+        markerviruViru.setMap(map);
+        markersanta1.setMap(map);
+        markersanta2.setMap(map);
+        markersucre.setMap(map);
+        markercampoPajoso.setMap(map);
+        markerbermejo.setMap(map);
+        markervillazon.setMap(map);
+        markeravaroa.setMap(map);
+        markerpisiga.setMap(map);
+        markertambo.setMap(map);
     },
 
 

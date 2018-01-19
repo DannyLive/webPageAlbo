@@ -392,12 +392,12 @@
                                     <div class="nav-align-center">
                                         <ul class="nav nav-pills nav-pills-primary nav-pills-just-icons" role="tablist">
                                             <li class="nav-item">
-                                                <a class="nav-link active" style="box-shadow: none;" data-toggle="tab" href="#elAlto" role="tablist">
+                                                <a class="nav-link active" style="box-shadow: none;" data-toggle="tab" href="#elAlto" role="tablist" onclick="javascript:map.setCenter(markerElAlto.getPosition());">
                                                     <i class="now-ui-icons design_image"></i>
                                                 </a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" style="box-shadow: none;" data-toggle="tab" href="#cochabamba" role="tablist">
+                                                <a class="nav-link" style="box-shadow: none;" data-toggle="tab" href="#cochabamba" role="tablist" onclick="javascript:map.setCenter(markercocha.getPosition());">
                                                     <i class="now-ui-icons location_world"></i>
                                                 </a>
                                             </li>
@@ -451,8 +451,9 @@
                                     <div class="contactus-2">
                                         <!-- Tab panes -->
                                         <div class="tab-content gallery text-center">
+                                            <div id="contactUsMap" class="map"></div>
                                             <div class="tab-pane active" id="elAlto" role="tabpanel">
-                                                <div id="contactUsMap" class="map"></div>
+                                                <!--aqui mapa-->
                                                 <div class="col-lg-6 col-md-10">
                                                     <div class="card card-contact card-raised">
                                                         <form role="form" id="contact-form" method="post">
@@ -501,9 +502,50 @@
                                                 </div>
                                             </div>
                                             <div class="tab-pane" id="cochabamba" role="tabpanel">
-                                                <div class="row">
-                                                    <div class="col-md-5 ml-auto mr-auto">
-cocha
+                                                <div class="col-lg-6 col-md-10">
+                                                    <div class="card card-contact card-raised">
+                                                        <form role="form" id="contact-form" method="post">
+                                                            <div class="card-header text-center">
+                                                                <h4 class="card-title">Cochabamba</h4>
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="info info-horizontal">
+                                                                            <div class="icon icon-primary">
+                                                                                <i class="now-ui-icons tech_mobile"></i>
+                                                                            </div>
+                                                                            <div class="description">
+                                                                                <h5 class="info-title">Contacto</h5>
+                                                                                <p> David E. Jordan Avaroma
+                                                                                    <br> Gerente Agencia
+                                                                                    <br> djordan@albo.com.bo
+                                                                                </p>
+                                                                                <p> Teléfono
+                                                                                    <br> +591 4268202
+                                                                                    <br> +591 4268201
+                                                                                </p>
+                                                                                <p>Lunes - Viernes, 8:00-22:00</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="info info-horizontal">
+                                                                            <div class="icon icon-primary">
+                                                                                <i class="now-ui-icons location_pin"></i>
+                                                                            </div>
+                                                                            <div class="description">
+                                                                                <h5 class="info-title">Oficina</h5>
+                                                                                <p> Av. Capitán Victor Ustariz Km 7,
+                                                                                    <br> Barrio La Florida
+                                                                                    <br> Cochabamba
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </form>
                                                     </div>
                                                 </div>
                                             </div>
@@ -945,10 +987,11 @@ cocha
             }
         </script>
         <script type="text/javascript">
+            var map;
             $(document).ready(function() {
-        // the body of this function is in assets/js/now-ui-kit.js
-        nowuiKit.initContactUsMap();
-    });
-</script>
+                // the body of this function is in assets/js/now-ui-kit.js
+                nowuiKit.initContactUsMap();
+            });
+        </script>
 
 </html>
